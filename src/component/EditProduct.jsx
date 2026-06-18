@@ -14,7 +14,7 @@ const EditProduct = () => {
       const {id} = useParams();
       console.log(id);
   
-      const[msg,setMsg]=useState("");
+      const [msg] = useState("");
 
       useEffect(()=>{
         ProductService.getProductById(id).then((res)=>{
@@ -22,7 +22,7 @@ const EditProduct = () => {
         }).catch((error)=>{
           console.log(error);
         })
-      },[]);
+      },[id]);
   
       const handleChange = (e) => {
           const value = e.target.value;
