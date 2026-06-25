@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL="http://localhost:8080";
+const API_URL="https://product-management-system-backend-ax88.onrender.com";
 
 
 class ProductService{
